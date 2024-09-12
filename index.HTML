@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        .carousel {
+  max-width: 600px;
+ margin-left: 600px;
+  
+  
+}
+ #cont{margin-left: 200px;
+    margin-right: 200px;}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Мое Портфолио</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="bg-primary text-white text-center" style="padding: 100px 0;">
+    <div class="container">
+        <h1>Добро пожаловать в ANIMALHOME</h1>
+    </div>
+</header>
+
+<section id="about" class="text-center my-5">
+    <div class="container">
+        <h2>О нас</h2>
+        <p>Мы-команда добровольцев, которые искренне стремятся помочь бездомным животным. Присоеденяйтесь к нам, чтобы подарить им новую надежду и радость!</p>
+    </div>
+</section>
+
+<section id="portfolio" class="my-5">
+    <div class="container text-center">
+        <h2>Мои проекты</h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="виталик.jpg" height="300" width="300" class="card-img-top" alt="Виталик">
+                    <div class="card-body">
+                        <h5 class="card-title">Виталик</h5>
+                        <p class="card-text">Ласковый, любит покушать.<br>Возраст - 5 лет.</p></br>
+                        
+                        <a href="#" class="btn btn-primary">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="инга.jpg"  height="300" width="300" class="card-img-top" alt="Ингушетия">
+                    <div class="card-body">
+                        <h5 class="card-title">Ингушетия</h5>
+                        <p class="card-text">Милая, спокойная кошечка.<br>Возраст - 3 месяца.</p></br>
+                        <a href="#" class="btn btn-primary">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <div class="card">
+                    <img src="алиса.jpg"  height="300" width="300" class="card-img-top" alt="Алиса">
+                    <div class="card-body">
+                        <h5 class="card-title">Алиса</h5>
+                        <p class="card-text">Недотрога, любит спать.<br>Возраст - 12 лет.</p></br>
+                        <a href="#" class="btn btn-primary">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="инга.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="виталик.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="алиса.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+
+<section id="contact" class="text-center my-5">
+
+    <div class="container">
+
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами по электронной почте: @animalhome.com</p>
+    </div>
+</section>
+<div id="cont">
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Пароль</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </form></div>
+
+
+
+<footer class="text-center py-4">
+    <p>&copy; 2024 Мое Портфолио. Все права защищены.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
